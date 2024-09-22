@@ -1,0 +1,61 @@
+/* a) Acrescentar overflow-y automático para a área principal */
+main {
+    overflow-y: auto; /* Rolagem vertical automática */
+}
+
+/* b) Dimensões de 60px, calc(100vh - 100px) e 25px para header, main e footer */
+header {
+    height: 60px;
+    background-color: #58738f;
+    padding: 10px 0;
+    color: white;
+    text-align: right;
+}
+
+main {
+    height: calc(100vh - 100px); /* Altura dinâmica baseada no viewport */
+    background-color: #f9fafa;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    height: 25px;
+    background-color: #e3e4e6;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Manter outras regras já estabelecidas anteriormente */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar-nav a:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
